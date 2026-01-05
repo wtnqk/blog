@@ -1,0 +1,22 @@
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# Obsidian
+content/.obsidian/
+content/.trash/
+**/.obsidian/workspace*.json
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+terraform/.terraform.lock.hcl
+
+# OS
+.DS_Store
+
+# Logs
+*.log

@@ -1,0 +1,59 @@
+baseURL = "https://blog.wtnqk.org/"
+languageCode = "ja"
+title = "Blog"
+theme = "hugo-blog-awesome"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[params]
+sitename = "wtnqk's Blog"
+defaultColor = "auto"
+description = "Roughly a memo"
+mainSections = ["posts"]
+toc = true
+tocOpen = false
+goToTop = true
+additionalScripts = []
+
+[params.author]
+name = "wtnqk"
+avatar = "avatar.png"
+intro = "wtnqk"
+description = "Roughly a memo"
+
+# [params.logo]
+# text = "Blog"
+# img = ""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/wtnqk"
+
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
+
+[markup]
+[markup.highlight]
+lineNos = true
+noClasses = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 4
+ordered = false
+
+[[menus.main]]
+name = "Posts"
+pageRef = "/posts"
+weight = 10
+
+[[menus.main]]
+name = "Tags"
+pageRef = "/tags"
+weight = 20
