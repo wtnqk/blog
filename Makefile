@@ -10,8 +10,7 @@ dev: ## Start Hugo dev server
 build: ## Build static site
 	hugo --minify
 
-post: ## Create new post (usage: make post)
-	@if [ -z "$(TITLE)" ]; then echo "Usage: make post"; exit 1; fi
+post: ## Create new post
 	@DIR="content/posts/$$(date +%Y-%m-%d)"; \
 	mkdir -p "$$DIR"; \
 	hugo new "posts/$$(date +%Y-%m-%d)/index.md"; \
